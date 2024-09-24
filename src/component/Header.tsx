@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import * as Index from '../index'
+import * as Index from '../main'
 import * as Hooks from '../hooks'
 
 import * as Core from '@material-ui/core'
