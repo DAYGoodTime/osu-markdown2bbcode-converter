@@ -70,7 +70,11 @@ function Config(props: ConfigProps) {
         <Core.DialogContent>
           <p>
             Author:&nbsp;zzzz
-            (Github:&nbsp;<AuthorGitHub />,&nbsp;MCBBS:&nbsp;<AuthorMCBBS />).
+            Github:&nbsp;<AuthorGitHub />.
+          </p>
+          <p>
+            Co-Author:&nbsp;TuRou
+            Github:&nbsp;<CoAuthorGitHub />.
           </p>
           <p>
             Source Code on <SourceCodeGitHub />, under <SourceCodeLicense />.
@@ -157,18 +161,22 @@ function AuthorGitHub(props: {}) {
   return <AboutLink href='https://github.com/ustc-zzzz'>@ustc-zzzz</AboutLink>
 }
 
+function CoAuthorGitHub(props: {}) {
+  return <AboutLink href='https://github.com/TrueRou'>@TrueRou</AboutLink>
+}
+
 function AuthorMCBBS(props: {}) {
   const href = 'https://www.mcbbs.net/?1480882'
   return <AboutLink href={href}>@ustc_zzzz</AboutLink>
 }
 
 function SourceCodeGitHub(props: {}) {
-  const href = 'https://github.com/ustc-zzzz/mcbbs-markdown2bbcode-converter'
+  const href = 'https://github.com/TrueRou/osu-markdown2bbcode-converter'
   return <AboutLink href={href}>GitHub</AboutLink>
 }
 
 function SourceCodeLicense(props: {}) {
-  const href = 'https://github.com/ustc-zzzz/mcbbs-markdown2bbcode-converter/blob/master/LICENSE'
+  const href = 'https://github.com/TrueRou/osu-markdown2bbcode-converter/blob/master/LICENSE'
   return <AboutLink href={href}>GPL-3.0 License</AboutLink>
 }
 
