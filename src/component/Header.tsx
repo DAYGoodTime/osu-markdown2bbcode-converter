@@ -25,7 +25,7 @@ function Header(props: HeaderProps) {
       <Core.StylesProvider injectFirst={true}>
         <Core.Toolbar className={toolbar}>
           <Core.Typography variant='h5' className={title}>
-            <span>MM2BC</span><TitleSuffix />
+            <span>OM2BC</span><TitleSuffix />
           </Core.Typography>
           <CopyOutput text={() => props.configCollector()['text']} />
           <Config images={props.images} configCollector={props.configCollector} />
@@ -39,9 +39,9 @@ function TitleSuffix(props: {}) {
   const isSmall = !Core.useMediaQuery('@media (min-width: 768px)')
   const { titleSuffixSmall } = Hooks.useHeaderStyles()
   return isSmall ? (
-    <div className={titleSuffixSmall}>MCBBS Markdown To BBCode Converter</div>
+    <div className={titleSuffixSmall}>osu! Markdown To BBCode Converter</div>
   ) : (
-    <span>&nbsp;-&nbsp;MCBBS Markdown To BBCode Converter</span>
+    <span>&nbsp;-&nbsp;osu! Markdown To BBCode Converter</span>
   )
 }
 
